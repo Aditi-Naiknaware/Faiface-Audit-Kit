@@ -1,0 +1,20 @@
+cat > requirements.txt << 'EOF'
+torch
+torchvision
+timm
+datasets
+torchmetrics
+scikit-learn
+fairlearn
+matplotlib
+seaborn
+plotly
+pandas
+numpy
+onnx
+onnxruntime
+opencv-python
+pillow
+gradio==4.*
+tqdm
+EOF

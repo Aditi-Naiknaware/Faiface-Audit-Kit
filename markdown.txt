@@ -1,0 +1,17 @@
+cat > reports/README.md << 'EOF'
+# FairFace Audit Kit — Report (Draft)
+
+This report summarizes accuracy and fairness metrics across runs:
+- **baseline** (no mitigation),
+- **reweighted** (class+group weights),
+- **groupdro** (smoothed-max group loss).
+
+See:
+- `reports/summary.csv`
+- `reports/figs/per_group_acc_box.png`
+
+Notes:
+- Dataset: HuggingFaceM4/FairFace (CC BY 4.0). Fields: image, age(9), gender(2), race(7). Splits: train/validation. :contentReference[oaicite:4]{index=4}
+- Metrics: Overall accuracy, per-group accuracy (race×gender), worst-group accuracy, Δ accuracy gap (max-min), ECE (15 bins).
+
+EOF
